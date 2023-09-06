@@ -31,7 +31,7 @@
 				if($_FILES['file']['size'] > 2097152){
 					alert('File is too big', 'back');
 				}
-				$file_name = $_FILES['file']['name'];
+				$file_name = urldecode($_FILES['file']['name']);
 
 				if(!move_uploaded_file($_FILES['file']['tmp_name'], '/tmp/upload/' . basename($file_name))) alert('Upload Fail', 'back');
 

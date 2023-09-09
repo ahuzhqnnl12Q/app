@@ -24,6 +24,9 @@
 					<div class="custom-file">
 						<input type="file" class="form-control-file" name="file">
 					</div>
+					<div class="form-group">
+						<input type="text" name="password" class="form-control" placeholder="password">
+					</div>
 					<button class="btn btn-primary" type="submit" style="margin-top: 10px">Write</button>
 				</form>
 			</div>
